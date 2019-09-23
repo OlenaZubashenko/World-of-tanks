@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic-ext"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/rates-popup.css">
     <title>World of tank</title>
 </head>
 
@@ -19,6 +20,7 @@
                     <img src="./img/Logo.png">
                 </a>
             </div>
+            <div class="youtube-button" id="youtubeClose" onclick="youtubeClose()"></div>
             <div class="title-video-wrapper">
                 <div class="title">
                     <h1>
@@ -35,11 +37,9 @@
                     </div>
                 </div>
                 <div class="video-youtube" id="youtube" hidden="true" style="z-index: 100; width: 100vh;height: 100vh;">
-                    <!-- <a href="#" class="video__btn">
-                        <img alt="video-button" class="video__img">
-                    </a> -->
-                    <iframe width="1115" height="631" src="https://www.youtube.com/embed/CmgeAyzeG0I" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+
+                    <iframe class="iframe" width="1115" height="631" src="https://www.youtube.com/embed/CmgeAyzeG0I"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -75,23 +75,23 @@
                 </div>
             </div>
             <div class="form-mobile">
-                    <h2 class="form__title">
-                        Замовити картку
-                    </h2>
-                    <input class="surname form-style" type="text" placeholder="Прізвище">
-                    <input class="name form-style" type="text" placeholder="Імя">
-                    <input class="father form-style" type="text" placeholder="По-батькові">
-                    <input class="phone-number form-style" type="tel" placeholder="Номер мобільного">
-                    <div class="checkbox-wrapper">
-                        <input class="checkbox" type="checkbox">
-                        <p class="form__agree">Я погоджуюся з
-                            <a href="#">умовами оформлення</a> онлайн-заявки
-                        </p>
-                    </div>
-        
-                    <button class="send" title="send">Відправити заявку</button>
-        
+                <h2 class="form__title">
+                    Замовити картку
+                </h2>
+                <input class="surname form-style" type="text" placeholder="Прізвище">
+                <input class="name form-style" type="text" placeholder="Імя">
+                <input class="father form-style" type="text" placeholder="По-батькові">
+                <input class="phone-number form-style" type="tel" placeholder="Номер мобільного">
+                <div class="checkbox-wrapper">
+                    <input class="checkbox" type="checkbox">
+                    <p class="form__agree">Я погоджуюся з
+                        <a href="#">умовами оформлення</a> онлайн-заявки
+                    </p>
                 </div>
+
+                <button class="send" title="send">Відправити заявку</button>
+
+            </div>
             <div class="info-wrapper">
                 <div class="info">
                     <div class="info__phone info-direction">
@@ -139,11 +139,30 @@
             <button class="send" title="send">Відправити заявку</button>
 
         </div>
+        <div class="rates" id="rates">
+            <div class="rates-wrapper">
+                <div class="rates-close" id="rates-close"></div>
+                <h1 class="rates-title">Тарифи для дебетової картки WOT</h1>
+                <ul>
+                    <li class="rates-item">
+                        <a href="#">Тарифи</a>
+                        <p class="pdf">pdf <span> 504.2 Kb</span></p>
+                    </li>
+                    <li class="rates-item">
+                        <a href="#">Правила Wargaming</a>
+                        <p class="pdf">pdf <span> 309.8 Kb</span></p>
+                    </li>
+                    <li class="rates-item">
+                        <a href="#">Правила поповнення картки</a>
+                        <p class="pdf">pdf <span> 250.7 Kb</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
 

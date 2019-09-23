@@ -31,6 +31,20 @@ body {
     margin-top: 56px;
     margin-left: 154px;
 }
+
+.youtube-button {
+    width: 20px;
+    height: 20px;
+display: none;
+position: fixed;
+background: url(../img/close-video-.png);
+top: 30px;
+right: 50px;
+}
+.youtube-button:hover {
+    filter: invert(60%) sepia(50%) saturate(970%) hue-rotate(311deg) brightness(97%) contrast(111%);
+}
+
 .title-video-wrapper {
 display: flex;
 margin-left: 154px;
@@ -54,10 +68,7 @@ border-radius: 4px;
     font-size: 17px;
     line-height: 17px;
 }
-.sale-wrapper:hover {
-    background: #1A1C1C;
-           
-    }
+
 .video {
     display: flex;
     justify-content: center;
@@ -69,14 +80,27 @@ border-radius: 4px;
     align-self: flex-end;
     height: 249px;
 }
+
+.video-youtube {
+    display: none;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+}
+iframe {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
 .video__btn {
     width: 70px;
     height: 60px;
 }
-.video__img:hover{
+.video__img:hover {
     cursor: pointer;
-}
-.video__img:hover{
     filter: invert(60%) sepia(50%) saturate(970%) hue-rotate(311deg) brightness(97%) contrast(111%);
 }
     
