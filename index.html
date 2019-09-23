@@ -20,7 +20,7 @@
                     <img src="./img/Logo.png">
                 </a>
             </div>
-            <div class="youtube-button" id="youtubeClose" onclick="youtubeClose()"></div>
+            <div class="youtube-button" id="youtubeClose"  onclick="toggleVideo()"></div>
             <div class="title-video-wrapper">
                 <div class="title">
                     <h1>
@@ -32,16 +32,19 @@
                     </div>
                 </div>
                 <div class="video">
-                    <div class="video__btn" onclick="showYouTube()">
+                    <div class="video__btn" onclick="toggleVideo()">
                         <img alt="video-button" class="video__img" src="./img/btn-youtube.svg">
                     </div>
-                </div>
-                <div class="video-youtube" id="youtube" hidden="true" style="z-index: 100; width: 100vh;height: 100vh;">
+                    <div class="video-youtube" id="youtube"
+                        style="z-index: 100; width: 365px; height: 249px;">
 
-                    <iframe class="iframe" width="1115" height="631" src="https://www.youtube.com/embed/CmgeAyzeG0I"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        <iframe class="iframe" width="365" height="249" src="https://www.youtube.com/embed/CmgeAyzeG0I"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
+
             </div>
 
             <div class="content">
@@ -125,10 +128,10 @@
             <h2 class="form__title">
                 Замовити картку
             </h2>
-            <input class="surname form-style" type="text" placeholder="Прізвище">
-            <input class="name form-style" type="text" placeholder="Імя">
-            <input class="father form-style" type="text" placeholder="По-батькові">
-            <input class="phone-number form-style" type="tel" placeholder="Номер мобільного">
+            <input class="surname form-style" type="text" placeholder="Прізвище" required>
+            <input class="name form-style" type="text" placeholder="Імя" required>
+            <input class="father form-style" type="text" placeholder="По-батькові" required>
+            <input class="phone-number form-style" type="tel" placeholder="Номер мобільного" required>
             <div class="checkbox-wrapper">
                 <input class="checkbox" type="checkbox">
                 <p class="form__agree">Я погоджуюся з
@@ -145,15 +148,15 @@
                 <h1 class="rates-title">Тарифи для дебетової картки WOT</h1>
                 <ul>
                     <li class="rates-item">
-                        <a href="#">Тарифи</a>
+                        <a href="https://alfabank.ua/storage/files/tarrifs-wargaming2019.pdf" target="_blank">Тарифи</a>
                         <p class="pdf">pdf <span> 504.2 Kb</span></p>
                     </li>
                     <li class="rates-item">
-                        <a href="#">Правила Wargaming</a>
+                        <a href="https://alfabank.ua/storage/files/1516807720-rules-co-brand-alfabank-ukrainepdf.pdf" target="_blank">Правила Wargaming</a>
                         <p class="pdf">pdf <span> 309.8 Kb</span></p>
                     </li>
                     <li class="rates-item">
-                        <a href="#">Правила поповнення картки</a>
+                        <a href="https://alfabank.ua/storage/files/card-recharge-rules-wot.pdf" target="_blank">Правила поповнення картки</a>
                         <p class="pdf">pdf <span> 250.7 Kb</span></p>
                     </li>
                 </ul>
