@@ -55,6 +55,7 @@ a::before {
 }
 .rates-item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom:  1px solid white;
     padding: 20px;
@@ -111,5 +112,16 @@ right: 50px;
     .rates-wrapper {
         top: 0;
         padding: 60px;
+     }
+}
+
+@media (max-width: 380px) {
+    .rates-wrapper {
+       
+        padding: 10px;
+     }
+     .rates-close {
+        top: 10px;
+        right: 10px;
      }
 }
