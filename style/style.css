@@ -91,6 +91,8 @@ border-radius: 4px;
 
 .video-youtube {
     position: absolute;
+    width: 475px;
+    height: 345px;
     top: 400px;
     pointer-events: none;
     opacity: 0;
@@ -357,6 +359,10 @@ line-height: 24px;
         width: 100%;
         height: 235px;
         } 
+        .video-youtube {
+      width: 350px;
+      height: 240px;
+        }
      .send {
          width: 240px;
      }  
