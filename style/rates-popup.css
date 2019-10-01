@@ -9,6 +9,7 @@
     width: calc(100% - 610px);
     height: 100%;
     z-index: 1;
+    
 }
 .rates-wrapper {
     padding: 75px;
